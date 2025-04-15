@@ -1,0 +1,101 @@
+
+body {
+    background-image: url(../images/image-hero-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    border: 1px solid black;
+    width: 568px;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 5px;
+}
+
+.container img {
+    width: 15%;
+}
+
+.container label {
+    margin: 10px 0;
+}
+
+.container input {
+    padding: 1%;
+    width: 60%;
+}
+
+.container button {
+    margin-top: 30px;
+    width: 25%;
+    padding: 6px 3px;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: hsl(0, 0%, 41%);
+}
+
+
+.container .btn-group {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container span {
+    color: red;
+    display: none;
+}
+
+.container a {
+    margin-top: 20px;
+}
+
+.container a:hover {
+    color: hsl(0, 0%, 41%);
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url(../images/image-hero-mobile.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container {
+        width: 90%;
+        margin: 20% auto;
+        padding: 5%;
+    }
+
+    .container img {
+        width: 25%;
+        margin: 0 auto 10px;
+    }
+
+    .container input {
+        width: 100%;
+    }
+
+    .container button {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .container .btn-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container a {
+        text-align: center;
+        display: block;
+    }
+}

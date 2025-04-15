@@ -1,0 +1,455 @@
+* {
+    box-sizing: border-box;
+    font-family: "Epilogue", sans-serif;;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    max-width: 1440px;
+}
+
+nav {
+    display: grid;
+    grid-template-areas: 'menu login';
+    
+
+}
+
+nav .icon-close {
+    display: none;
+}
+
+.menu {
+    grid-area: menu;
+
+}
+
+.fake {
+    display: none;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+.menu ul li {
+    padding-right: 5%;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+
+.menu ul li a .logo {
+    padding-right: 15px;
+}
+.menu ul li img {
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.login {
+    grid-area: login;
+}
+
+.login img {
+    display: none;
+}
+
+.login ul {
+    display: flex;
+    list-style: none;
+    margin-left: 45%;
+
+}
+
+.login ul li {
+    padding-right: 20%;
+}
+
+.login ul li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+
+.login ul li .register {
+    border: 1px solid hsl(0, 0%, 41%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+main {
+    display: grid;
+    grid-template-areas: 'text image';
+}
+
+.text {
+    grid-area: text;
+    padding-left: 20%;
+    padding-top: 10%;
+    
+}
+
+.text h1 {
+    font-size: 70px;
+    
+}
+
+.text p {
+    width: 60%;
+    color: hsl(0, 0%, 41%);
+}
+
+.text button {
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    padding: 2% 3%;
+    border-radius: 10px;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.text .sponsor {
+    margin-top: 10%;
+    
+}
+
+.text .sponsor img {
+    padding-right: 5%;
+}
+
+.image {
+    grid-area: image;
+}
+
+.image img {
+    width: 70%;
+    margin-top: 5%;
+}
+
+
+/* Lista di oggetti( items list) */
+
+.list-one {
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    right: 79%;
+    top: 50px;
+    display: none;
+}
+
+.list-one ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 20px;
+   
+    
+
+}
+
+.list-one li {
+    padding-bottom: 8%;
+    display: flex;
+    padding-top: 8%;
+    
+}
+
+.list-one li img {
+    padding-right: 10px;
+}
+
+
+.list-two {
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    left: 24%;
+    top: 50px;
+    display: none;
+}
+
+.list-two ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 20px;
+}
+
+.list-two li {
+    padding-bottom: 8%;
+    padding-top: 8%;
+    display: flex;
+    
+}
+
+
+/* MEDIA QUERY FOR SMALL SCREEN */
+
+@media screen and (max-width : 568px) {
+
+    .fake {
+        display: flex;
+        justify-content: space-between;
+     }
+
+     .fake .login-image {
+        cursor: pointer;
+     }
+
+    nav {
+        display: none;
+        grid-auto-flow: 'menu'
+        'login';
+        height: 618px;
+        width: 219px;
+        position: absolute;
+        left: 60%;
+        background-color: hsl(0, 0%, 98%);
+        bottom: 0%;
+        z-index: 1;
+
+
+    }
+
+    nav .icon-close {
+        display: block;
+        margin-left: 80%;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    
+    .menu {
+        grid-area: menu;
+       
+        
+        
+    
+    }
+   
+    
+    .menu ul {
+        list-style: none;
+        display: none;
+        
+    }
+
+
+    
+    .menu ul li {
+        padding-top: 15%;
+    }
+    
+    .menu ul li a {
+        text-decoration: none;
+        color: hsl(0, 0%, 41%);
+    }
+    
+    .menu ul li a .logo {
+        display: none;
+    }
+
+
+    .menu ul li img {
+        padding-left: 5px;
+        cursor: pointer;
+    }
+    
+    .login {
+        grid-area: login;
+        width: 0%;
+        height: 0%;
+        margin-top: 0%;
+        margin-left: 0%;
+        cursor: pointer;
+        
+       
+        
+    }
+
+    .login img {
+        display: flex;
+       
+    }
+
+  
+
+    
+    .login ul {
+        display: none;
+        position: relative;
+
+    
+    }
+    
+    .login ul li {
+        padding-right: 0%;
+        padding-top: 20px;
+       
+    }
+    
+    .login ul li a {
+        text-decoration: none;
+        color: hsl(0, 0%, 41%);
+        text-align: center;
+    }
+
+    .login ul li .login {
+        margin-left: 30px;
+       
+    }
+    
+    .login ul li .register {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid;
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+
+
+    main {
+        display: grid;
+        grid-template-areas: 'image'
+                              'text';
+                              z-index: 0;
+
+    }
+    
+    .text {
+        grid-area: text;
+        text-align: center;
+        margin-right: 20%;
+        
+        
+        
+    }
+    
+    .text h1 {
+        font-size: 25px;
+ 
+    }
+    
+    .text p {
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        line-height: 24px;
+
+    }
+    
+    .text button {
+        color: hsl(0, 0%, 98%);
+        background-color: hsl(0, 0%, 8%);
+        padding: 4% 3%;
+        border-radius: 10px;
+        margin-top: 5%;
+        cursor: pointer;
+    }
+    
+    .text .sponsor {
+        display: flex;
+        flex-direction: row;
+        margin-right: 10%;
+        margin-top: 20%;
+        margin-bottom: 60%;
+        
+    }
+    
+    .text .sponsor img {
+        width: 30%;
+        height: 30%;
+        
+        
+    }
+    
+    .image {
+        grid-area: image;
+        margin-top: 10%;
+    }
+    
+    .image img {
+        width: 100%;
+        
+    }
+
+
+    .list-one {
+        border: 1px solid hsl(0, 0%, 41%);
+        border-radius: 5px;
+        position: relative;
+        right: 0%;
+        top: 5px;
+        display: flex;
+        flex-direction: column;
+        height: 120px;
+        
+        
+    }
+    
+    .list-one ul {
+        flex-direction: column;
+        display: flex;
+        padding: 10px 0px;
+        
+       
+        
+    
+    }
+    
+    .list-one ul li {
+        padding: 2px;
+        display: block;
+        
+        
+    }
+    
+    .list-one ul li img {
+        padding-right: 10px;
+    }
+    
+    
+    .list-two {
+        border: 1px solid hsl(0, 0%, 41%);
+        border-radius: 5px;
+        position: relative;
+        left: 0%;
+        top: 5px;
+        height: 90px;
+        background-color: white;
+        color: black;
+        padding: 0px;
+        
+        
+    }
+    
+    .list-two ul {
+        flex-direction: column;
+        display: flex;
+        padding: 5px;
+    }
+
+    .list-two li {
+        padding: 10px;
+        display: block;
+        font-size: 18px; 
+
+       
+    }
+    .list-two li a {
+        text-decoration: none;
+        color: black;
+    }
+    
+   
+
+} 
+
+

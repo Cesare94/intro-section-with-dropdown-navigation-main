@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/login.css">
+    
+
+    <script src="script/register.js"></script>
+    
+
+    
+</head>
+<body>
+    <div class="container">
+
+        <img src="images/logo.svg" alt="logo">
+        <h3>Register</h3>
+        <label for="Name">Name</label>
+        <span class="span-Name">The name must be more than 3 characters long</span>
+        <input type="text" name="Name" id="Name" placeholder="Name" min="2">
+        
+        <label for="email">Email</label> 
+        <span class="span-email">Fill the space with a correct Email</span>
+        <input type="email" name="email" id="email" placeholder="example@mail.com">
+
+        <label for="password">Password</label> 
+        <span class="span-pass">Fill the space with a correct password</span>
+        <input type="password" name="password" id="password">
+
+        <label for="password">Confirm Password</label> 
+        <span class="span-confirm">Not the same</span>
+        <input type="password" name="confirm" id="confirm">
+
+        <div class="btn-group">
+            <button type="submit" id="back">Back</button>
+            <button type="submit" id="register">Register</button>
+
+        </div>
+</body>
+</html>

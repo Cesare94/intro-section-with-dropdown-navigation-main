@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+  <script src="script/script.js"></script>
+
+  <link rel="stylesheet" href="style/style.css">
+
+
+</head>
+<body>
+  <div class="fake">
+    <img src="images/logo.svg" class="logoFake" alt="logo">
+    <img src="images/icon-menu.svg" alt="icon-menu" class="login-image">
+  </div>
+ 
+  <nav>
+    <div class="menu">
+      <img src="images/icon-close-menu.svg" alt="icon-close-menu" class="icon-close" id="icon-close">
+      <ul>
+        <li><a href="#"><img src="images/logo.svg" alt="logo" class="logo"></a></li>
+        <li><a href="#" id="arrow-features">Features</a><img src="images/icon-arrow-down.svg" alt="icon-arrow-down" id="arrow-down-features"></li>
+          <div class='list-one' id="list-one">
+            <ul>
+                <li><img src = 'images/icon-todo.svg'><a href = '#'>Todo List</a></li>
+                <li><img src = 'images/icon-calendar.svg'><a href = '#'>Calendar</a></li>
+                <li><img src = 'images/icon-reminders.svg'><a href = '#'>Reminders</a></li>
+                <li><img src = 'images/icon-planning.svg'><a href = '#'>Planning</a></li>
+            </ul>
+        </div>
+        <li><a href="#" id="arrow-company">Company</a><img src="images/icon-arrow-down.svg" alt="icon-arrow-down" id="arrow-down-company"></li>
+          <div class='list-two' id="list-two">
+            <ul>
+                <li><a href = '#'>History</a></li>
+                <li><a href = '#'>Our Team</a></li>
+                <li><a href = '#'>Blog</a></li>
+                </ul>
+        </div>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+
+  
+
+    <div class="login">
+      <ul>
+        <li><a href="login.html" id="login" class="login">Login</a></li>
+        <li><a href="register.html" id="register" class="register">Register</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <main>
+    <div class="text">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+      <button type="submit">Learn more</button>
+
+      <div class="sponsor">
+        <img src="images/client-databiz.svg" alt="client-databiz">
+        <img src="images/client-audiophile.svg" alt="client-audiophile">
+        <img src="images/client-meet.svg" alt="client-meet">
+        <img src="images/client-maker.svg" alt="client-maker">
+      </div>
+
+    </div>
+
+
+    <div class="image">
+      <img src="images/image-hero-desktop.png" alt="image-hero-desktop">
+    </div>
+  </main>
+
+</body>
+</html>
